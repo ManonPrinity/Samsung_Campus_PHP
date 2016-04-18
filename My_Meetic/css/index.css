@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+html {}
+body { margin: 0px; color: #333; font-size: 0px; font-family: "Open Sans";}
+
+h1, h2, h3, h4, h5, h6 { margin: 0;}
+p { margin: 0;}
+
+.bloc { display: block; width: 100%; border-bottom: 1px solid #ddd; }
+.bloc:nth-child(odd) { background: url(../img/clouds.png),  #fbf1f4;}
+.bloc:nth-child(even) { background: #fafafa;}
+	.bloc > .bloc_content { display: block; box-sizing: border-box; margin: auto; padding: 16px;}
+
+
+
+.title_text { padding: 64px 0px; background-size: 100%;}
+	.title_text h2 { margin-bottom: 42px; font-size: 42px; font-weight: 300; color: #000; text-align: center;}
+	.title_text p { text-align: center; box-sizing: border-box; max-width: 600px; line-height: 32px; margin: auto; padding: 0px 10px; font-size: 16px; font-weight: 300;}
+
+
+.form_content { padding: 64px 0px; border-top: 2px solid #999; line-height: 25px;}
+	.form_content form { display: block; position: relative; right: 12px; width: 150px; margin: auto;}
+	.form_content label { display: inline-block; font-size: 13px; text-align: left; line-height: 25px; cursor: pointer;}
+	.form_content input { display: inline-block; font-size: 13px; text-align: center; line-height: 25px; cursor: pointer;}
+	.form_content #sex { display: block; position: relative; width: 40px; line-height: 35px; margin: auto; left: 15%; font-size: 15px;}
+		.form_content a {  margin: auto;text-decoration: none; font-size: 11px; width: }
+		#valid { margin: auto; display: inline-block; position: relative; left: 42%; }
+			#register h3 { font-size: 35px; }
+
+#login { display: block; position: absolute; left: 25px; width: 150px; border: 1px solid #999;}
+	#login label { font-size: 13px; text-align: left; line-height: 25px; cursor: pointer; }
+	#login h4 { font-size: 20px; }
