@@ -1,17 +1,10 @@
 <?php
 	session_start();
+	include 'fonctions/config.php';
+	include 'template/header.phtml';
 ?>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Landing Framework - Test">
-		<title>My_Meetic</title>
-		<link rel="stylesheet" href="css/index.css"/>
-	</head>
-
-	<body>
 		<section class="bloc title_text">
-		<?php include_once("form_login.phtml");?></br>
+			<?php include_once("template/form_login.phtml");?></br>
 			<div class="bloc_content">
 				<h2>My_Meetic</h2>
 				<p>
@@ -19,9 +12,12 @@
 				</p>
 			</div>
 			<div class="form_content">
-			<?php include_once("form_register.phtml");?>
+				<?php include_once("template/form_register.phtml");?>
 			</div>
 		</section>
-	</body>
-</html>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    	<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    	<script type="text/javascript" src="script/datepicker.js"></script>
+<?php include 'template/footer.phtml';?>
 
