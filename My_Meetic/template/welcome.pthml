@@ -1,0 +1,9 @@
+<?php
+
+	include '../fonctions/config.php';
+	include 'template/header.phtml';
+?>
+
+<header>
+	<p>Bienvenue sur My Meetic</p>
+</header>

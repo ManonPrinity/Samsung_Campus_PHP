@@ -1,24 +1,28 @@
 <?php
 require_once('connexion.php');
+
+
 $mail = $_POST['mail'];
 $password = $_POST['password'];
 
-$connectQuery = $bdd->prepare("SELECT * FROM users WHERE mail = :mail");
+$connectQuery = $bdd->prepare("SELECT * FROM users WHERE mail = :mail ");
 $connectQuery->bindParam(':mail', $mail);
+// $connectQuery->bindParam(':password', md5($password));
 $connectQuery->execute();
-var_dump($connectQuery);
 
 $currentUser = $connectQuery->fetch();
-if(md5($password) == $currentUser['password']){
-	$_SESSION['logged'] = true;
+if( md5($password) == $currentUser['password'])
+{
+	$_SESSION['Connecte'] = true;
 	$_SESSION['id_user'] = $currentUser['id_user'];
 	$_SESSION['pseudo'] = $currentUser['pseudo'];
 	$_SESSION['mail'] = $_POST['mail'];
-	echo "Vous êtes connecté !";
-	var_dump($currentUser);
+	var_dump($_SESSION);
+	header('Location:'._BASE_URI);
 }
 else
 {
-	header('Location: ../template/error.phtml');
+
 }
+
 ?>
