@@ -1,0 +1,31 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+
+html {}
+body { margin: 0px; color: #333; font-size: 0px; font-family: "Open Sans"; text-align: center; background-color: #fefbfc}
+
+h1, h2, h3, h4, h5, h6 { margin: 0;}
+p { margin: 0;}
+
+.bloc { display: block; width: 100%; border-bottom: 3px solid #ddd; }
+.bloc:nth-child(odd) { background: #f5f5f5; background: url(../img/clouds.png),  #fbf1f4;}
+.bloc:nth-child(even) { background: #fafafa;}
+	.bloc > .bloc_content { display: block; box-sizing: border-box; max-width: 1024px; margin: auto; padding: 16px;}
+
+
+
+.title_text { padding: 14px 0px;}
+	.title_text h2 { margin-bottom: 42px; font-size: 42px; font-weight: 300; color: #000;}
+	.title_text p { box-sizing: border-box; max-width: 600px; line-height: 32px; margin: auto; padding: 0px 10px; font-size: 16px; font-weight: 300;}
+	.title_text form { display: inline-block; position: absolute; right: 10px; top: 50px; }
+
+
+#left_aside { height: 100%; width: 30%; background: url(../img/clouds.png),  #fbf1f4; border-right: 3px solid #ddd; }
+	#left_aside h2 { font-family: "Open Sans"; font-size: 25px; padding-top: 25px; margin: auto; }
+	#left_aside p { font-size: 20px; font-family: "Open Sans"; margin: auto; }
+	#left_aside form { display: block; position: relative; right: 12px; width: 150px; margin: auto; }
+
+
+/* ---- erreur ---- */
+
+#err { margin-bottom: 42px; font-size: 42px; font-weight: 300; color: #000; }
+#error { margin-bottom: 42px; font-size: 42px; font-weight: 300; color: #000; text-decoration: none; }

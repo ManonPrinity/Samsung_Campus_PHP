@@ -24,7 +24,7 @@ if(!empty($pseudo) && !empty($name) && !empty($firstname) && !empty($mail) && !e
     {
 
         echo "mail " . $mail . " ou Pseudo " . $pseudo . " déjà utilisé !\n";
-        header('Location: ../index.php');
+        header('Location: ../template/error.phtml');
     } 
     elseif($password_confirm === $password) 
     {
@@ -42,10 +42,12 @@ if(!empty($pseudo) && !empty($name) && !empty($firstname) && !empty($mail) && !e
     } 
     else 
     {
+        header('Location: ../template/error.phtml');
         echo "Les mots de passe ne correspondent pas";
     }
 }
 else {
+    header('Location: ../template/error.phtml');
     echo "Terminer de completer tout les champs !";
 }
 

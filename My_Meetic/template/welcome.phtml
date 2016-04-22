@@ -1,9 +1,28 @@
-<?php
-
-	include '../fonctions/config.php';
-	include 'template/header.phtml';
-?>
-
-<header>
-	<p>Bienvenue sur My Meetic</p>
-</header>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Landing Framework - Test">
+		<title>My Meetic</title>
+		<link rel="stylesheet" href="../css/welcome.css"/>
+	</head>
+	<body>
+		<section class="bloc title_text">
+			<div class="bloc_content">
+				<h2>Welcome to my_meetic</h2>
+				<p>
+					Lorem ipsum dolor sit ameta
+				</p>
+				<form method="post" action="../fonctions/deconnexion.php" id="inscription">
+					<input id="deco" type="submit" value="Deconnexion" name="deconnexion" class="deco" />
+				</form>
+		</section>
+		<div id="left_aside">
+			<h2>Recherche</h2>
+			<p>de profil par:</p>
+			<form method="post" action="../fonctions/recherche.php" id="inscription">
+				<input type="text" class="formulaire" name="recherche" id="pseudo" size="30" placeholder="---- pseudo ----" required></input>
+				<input id="valid" type="submit" value="Valider" name="search" class="valider" />
+			</form>
+		</div>
+	</body>
+</html>
