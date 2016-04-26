@@ -19,10 +19,14 @@ p { margin: 0;}
 	.title_text form { display: inline-block; position: absolute; right: 10px; top: 50px; }
 
 
-#left_aside { height: 100%; width: 30%; background: url(../img/clouds.png),  #fbf1f4; border-right: 3px solid #ddd; }
+#left_aside { height: 100%; width: 30%; background: url(../img/clouds.png),  #fbf1f4; border-right: 3px solid #ddd; line-height: 65px; }
 	#left_aside h2 { font-family: "Open Sans"; font-size: 25px; padding-top: 25px; margin: auto; }
 	#left_aside p { font-size: 20px; font-family: "Open Sans"; margin: auto; }
-	#left_aside form { display: block; position: relative; right: 12px; width: 150px; margin: auto; }
+	#left_aside form { display: block; position: relative; right: 12px; width: 150px; margin: auto; margin-top: 10px; }
+	#left_aside input { text-align: center; margin-top: 10px; }
+		#valid { display: inline-block; position: relative; right: 0px; }
+
+#left_aside #result { font-size: 16px; height: 100%; }
 
 
 /* ---- erreur ---- */

@@ -17,7 +17,7 @@ if( md5($password) == $currentUser['password'])
 	$_SESSION['id_user'] = $currentUser['id_user'];
 	$_SESSION['pseudo'] = $currentUser['pseudo'];
 	$_SESSION['mail'] = $_POST['mail'];
-	header('Location: ../template/welcome.phtml');
+	header('Location: ../template/welcome.php');
 }
 else
 {
